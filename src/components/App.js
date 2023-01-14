@@ -3,6 +3,8 @@ import "./App.css";
 import Container from "react-bootstrap";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { AuthProvider } from "../contexts/AuthContexts";
+import Login from "./Login";
+import Signup from "./SignUp";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
             <Switch>
               {/* All of our pages are gonna go here and we link between them using the <Link> tag */}
               {/* <Route path="/nameOffile" component={nameOfComponent}/> */}
+              <Route path="/login" component={Login} />
+              <Route path="/signup" component={Signup} />
             </Switch>
           </AuthProvider>
         </Router>

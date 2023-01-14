@@ -13,7 +13,6 @@ function App() {
       <div className="w-100" style={{ maxWidth: "400px" }}>
         <Router>
           <AuthProvider>
-            {" "}
             // Makes it so everything can see the auth context
             <Switch>
               {/* All of our pages are gonna go here and we link between them using the <Link> tag */}
